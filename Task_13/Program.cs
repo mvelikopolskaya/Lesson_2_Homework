@@ -3,14 +3,14 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 if(number > 99)
     {
-        int third_digit = Third_Digit(number);
-        Console.WriteLine($"Третья цифра числа {number} - {third_digit}");
+        int thirdDigit = ThirdDigit(number);
+        Console.WriteLine($"Третья цифра числа {number} - {thirdDigit}");
     }
 else
     Console.WriteLine("Третьей цифры нет"); 
 
 
-int Third_Digit(int num)
+int ThirdDigit(int num)
 {
     while(number > 999)
     {
