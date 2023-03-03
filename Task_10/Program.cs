@@ -2,14 +2,14 @@
 int number = Convert.ToInt32(Console.ReadLine());
 
 if(number > 100 && number < 999)
-    {int second_digit = Second_Digit(number);
-    Console.WriteLine($"Вторая цифра числа {number} - {second_digit}");
+    {int secondDigit = SecondDigit(number);
+    Console.WriteLine($"Вторая цифра числа {number} - {secondDigit}");
     }
 else
     Console.WriteLine("Ошибка ввода"); 
 
 
-    int Second_Digit(int num)
+    int SecondDigit(int num)
     {
         int result = number / 10 % 10;;
         return result;
